@@ -22,6 +22,10 @@ module.exports = {
         let allUsers = await userDb.find()
         res.send({error: false, users: allUsers, message: "Vartotojas ištrintas!"})
     },
+    find: async (req, res) => {
+        let user = await userDb.findById({_id: req.params.id})
+        res.send({error: false, findUser: user})
+    },
     //
     // add: async (req, res) => {
     //     let item = await itemDb.find({_id: req.params.id})

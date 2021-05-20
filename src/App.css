@@ -114,3 +114,48 @@
   display: flex;
   align-items: center;
 }
+.edit-main{
+  display: flex;
+  width: 70%;
+  padding: 20px 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #eaa0b3;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 70px 0 70px 0;
+}
+.editForm{
+  padding: 30px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.editForm input{
+  margin: 5px;
+  padding: 5px;
+  background-color: #E3C2C9;
+}
+.editForm button{
+  background-color: #ae6272;
+  color: white;
+  padding: 7px;
+  text-align: center;
+  margin: 20px 5px 5px 5px;
+  cursor: pointer;
+  border-radius: 20px 0 20px 0;
+  transition: .3s;
+}
+.editForm button:hover{
+  border-radius: 0 20px 0 20px;
+  background-color: #324162;
+}
+.close-icon{
+  font-size: 40px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}

@@ -7,12 +7,8 @@
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/Main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/router/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/router/Router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UploadPreview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UploadPreview.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Upload.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +46,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1621487358166</updated>
-      <workItem from="1621487359432" duration="13334000" />
+      <workItem from="1621487359432" duration="18360000" />
     </task>
     <servers />
   </component>
