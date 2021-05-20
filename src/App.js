@@ -7,6 +7,7 @@ import {
 import React, {useState} from "react";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import Upload from "./pages/Upload";
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
             <Route exact path="/">
                 <Home/>
             </Route>
+              <Route path="/upload">
+                  <Upload/>
+              </Route>
 
           </Switch>
         </Router>

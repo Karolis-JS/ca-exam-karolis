@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  background-image: url("./images/background.jpg");
+  background-size: cover;
+  height: 100vh;
+  overflow: auto;
 }
 
 .nav{
@@ -22,4 +26,67 @@
 .nav a:hover{
   color: yellow;
   text-shadow: 2px 4px 4px #b8cce2;
+}
+.userMain{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.userCard{
+  width: 150px;
+  height: auto;
+  padding: 20px;
+  text-align: left;
+  background-color: #E3C2C9;
+  margin: 10px;
+  border-radius: 30px 0 30px 0;
+}
+.userCard button{
+  background-color: #ae6272;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 20px 0 20px 0;
+}
+.userCard button:hover{
+  border-radius: 0 20px 0 20px;
+  background-color: #324162;
+}
+.upload-form-main{
+  width: 100%;
+  display: flex;
+}
+.uploadForm{
+  padding: 30px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.uploadForm input{
+  margin: 5px;
+  padding: 5px;
+  background-color: #E3C2C9;
+}
+.uploadForm button{
+  background-color: #ae6272;
+  color: white;
+  padding: 7px;
+  text-align: center;
+  margin: 20px 5px 5px 5px;
+  cursor: pointer;
+  border-radius: 20px 0 20px 0;
+}
+.uploadForm button:hover{
+  border-radius: 0 20px 0 20px;
+  background-color: #324162;
+}
+.uploadPreview-div{
+  width: 60%;
+  padding: 20px 50px 50px 70px;
+  display: flex;
+  align-items: center;
+  /*justify-content: center;*/
 }
