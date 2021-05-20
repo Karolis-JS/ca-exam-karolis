@@ -1,13 +1,13 @@
 import React from 'react';
 
-function UploadPreview(props) {
+function UploadPreview({userName, userAge, userEmail, userPassword}) {
     return (
         <div>
             <div className="userCard">
-                <h2>Name</h2>
-                <h3>Age</h3>
-                <p>labas@labas.lt</p>
-                <p>vartotojo slaptažodis</p>
+                <h2>{userName}</h2>
+                <h3>{userAge}</h3>
+                <p>{userEmail}</p>
+                <p>{userPassword}</p>
                 <button></button>
                 <button></button>
             </div>
