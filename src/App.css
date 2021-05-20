@@ -57,28 +57,6 @@
   border-radius: 0 20px 0 20px;
   background-color: #324162;
 }
-.user-delete-msg{
-  position: absolute;
-  left: 50%;
-  margin-top: -20px;
-  transform: translate(-50%);
-  color: white;
-  opacity: 0;
-  animation-name: delete-msg;
-  animation-duration: 2s;
-}
-@keyframes delete-msg {
-  0%{
-    opacity: 0;
-  }
-  50%{
-    opacity: 1;
-  }
-  100%{
-    opacity: 0;
-  }
-
-}
 .upload-form-main{
   width: 100%;
   display: flex;

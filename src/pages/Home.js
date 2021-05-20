@@ -24,9 +24,8 @@ function Home({users, setUsers}) {
 
     return (
         <div className="userMain">
-            <h2 className="user-delete-msg">Vartotojas ištrintas!</h2>
-            {users.map(item =>
-                <div key={item._id} className="userCard">
+            {users.map((item, index) =>
+                <div key={index} className="userCard">
                     <h2>{item.name}</h2>
                     <h3>{item.age}</h3>
                     <p>{item.email}</p>

@@ -38,7 +38,7 @@ function Edit({findUser, flex}) {
         http.post('/edit', data).then(res => {
             setError(res.message)
             if (!res.error){
-                alert("Vartotojas sėkmingai redaguotas")
+                alert("Vartotojas sėkmingai atnaujintas")
                setDisplay("none")
             }
         })
@@ -48,15 +48,14 @@ function Edit({findUser, flex}) {
         setDisplay("none")
     }
 
-
     return (
         <div style={{display: display}} className="edit-main">
             <AiFillCloseCircle onClick={showEditComponent} className="close-icon"/>
             <div className="editForm">
-                <input ref={nameRef} onChange={(e) => setName(e.target.value)} value={findUser.name} type="text" placeholder="Vartotojo vardas"/>
-                <input ref={ageRef} onChange={(e) => setAge(e.target.value)} value={findUser.age} type="number" placeholder="Vartotojo amžius"/>
-                <input ref={emailRef} onChange={(e) => setEmail(e.target.value)} value={findUser.email} type="email" placeholder="Vartotojo el. paštas"/>
-                <input ref={passwordRef} onChange={(e) => setPassword(e.target.value)} value={findUser.password} type="password" placeholder="Vartotojo slaptažodis"/>
+                <input ref={nameRef} onChange={(e) => setName(e.target.value)}  type="text" placeholder={findUser.name} />
+                <input ref={ageRef} onChange={(e) => setAge(e.target.value)}  type="number" placeholder={findUser.age}/>
+                <input ref={emailRef} onChange={(e) => setEmail(e.target.value)} type="email" placeholder={findUser.email}/>
+                <input ref={passwordRef} onChange={(e) => setPassword(e.target.value)} type="password" placeholder={findUser.password}/>
                 <button onClick={EditUser}>Atnaujinti</button>
                 <div style={{color: "red"}}>{error}</div>
             </div>
