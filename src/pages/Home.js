@@ -6,18 +6,18 @@ import Edit from"../components/Edit";
 function Home({users, setUsers}) {
 
     const [user, setUser] = useState([])
+    const [display, setDisplay] = useState("")
 
     function removeUser(id){
         http.get('/delete/'+id).then(res => {
             setUsers(res.users)
-            console.log(res)
         })
     }
 
     function setUserInfo(id){
+        setDisplay("flex")
         http.get('/find/'+id).then(res => {
             setUser(res.findUser)
-            console.log(res)
         })
 
     }
@@ -35,7 +35,7 @@ function Home({users, setUsers}) {
                     <button onClick={(id) => setUserInfo(item._id)}>Redaguoti vartotoją</button>
                 </div>
             )}
-            <Edit findUser={user}/>
+            <Edit flex={display} findUser={user}/>
         </div>
     );
 }

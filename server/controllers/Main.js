@@ -26,15 +26,21 @@ module.exports = {
         let user = await userDb.findById({_id: req.params.id})
         res.send({error: false, findUser: user})
     },
-    //
-    // add: async (req, res) => {
-    //     let item = await itemDb.find({_id: req.params.id})
-    //     let quantity = item[0].quantity + 1
-    //     await itemDb.findByIdAndUpdate({_id: req.params.id}, {
-    //         quantity: quantity
-    //     })
-    //     res.send({error: false, message: 'update!'})
-    // },
-
+    edit: async (req, res) => {
+        await userDb.findByIdAndUpdate({_id: req.body.id},
+            {$set:
+                    {name: req.body.name,
+                     age: req.body.age,
+                     email: req.body.email,
+                     password: req.body.password},
+            },
+            {returnOriginal: false})
+            .then(() => {
+                res.send({error: false, msg: "User update successful"})
+            }).catch(e => {
+                console.log(e)
+                res.send({error: true, msg: "Wrong data", e})
+            })
+    },
 
 }

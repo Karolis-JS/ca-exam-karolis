@@ -115,7 +115,7 @@
   align-items: center;
 }
 .edit-main{
-  display: flex;
+  display: none;
   width: 70%;
   padding: 20px 0;
   position: absolute;

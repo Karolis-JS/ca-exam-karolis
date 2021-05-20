@@ -1,6 +1,8 @@
 import React from 'react';
 
 function EditPreview({userName, userAge, userEmail, userPassword}) {
+
+
     return (
         <div>
             <div className="userCard">
